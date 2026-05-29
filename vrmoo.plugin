@@ -2,14 +2,14 @@
 #!desc = 魔趣(vrmoo.vip) 每日自动签到，访问网站时自动捕获Cookie，每天定时执行签到
 #!author = Hermes Agent
 #!version = 1.0.0
-#!homepage = https://github.com/csjoy/vrmoo-loon-signin
+#!homepage = https://github.com/csjoyxy/vrmoo-loon-signin
 #!icon = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Sign.png
 #!tag = signin,checkin,vrmoo,魔趣
 #!date = 2026-05-29
 
 [Script]
-http-response ^https://www\.vrmoo\.vip/ script-path=https://raw.githubusercontent.com/csjoy/vrmoo-loon-signin/main/vrmoo-capture.js, tag=魔趣Cookie捕获, requires-body=0
-cron "0 8 * * *" script-path=https://raw.githubusercontent.com/csjoy/vrmoo-loon-signin/main/vrmoo-signin.js, tag=魔趣每日签到
+http-response ^https://www\.vrmoo\.vip/ script-path=https://raw.githubusercontent.com/csjoyxy/vrmoo-loon-signin/main/vrmoo-capture.js, tag=魔趣Cookie捕获, requires-body=0
+cron "0 8 * * *" script-path=https://raw.githubusercontent.com/csjoyxy/vrmoo-loon-signin/main/vrmoo-signin.js, tag=魔趣每日签到
 
 [MITM]
 hostname = %APPEND% www.vrmoo.vip

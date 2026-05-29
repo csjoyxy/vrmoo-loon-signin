@@ -9,7 +9,7 @@
 在 Loon 中点击下方链接安装：
 
 ```
-https://raw.githubusercontent.com/csjoy/vrmoo-loon-signin/main/vrmoo.plugin
+https://raw.githubusercontent.com/csjoyxy/vrmoo-loon-signin/main/vrmoo.plugin
 ```
 
 ## 手动配置
@@ -18,8 +18,8 @@ https://raw.githubusercontent.com/csjoy/vrmoo-loon-signin/main/vrmoo.plugin
 
 ```ini
 [Script]
-http-response ^https://www\.vrmoo\.vip/ script-path=https://raw.githubusercontent.com/csjoy/vrmoo-loon-signin/main/vrmoo-capture.js, tag=魔趣Cookie捕获, requires-body=0
-cron "0 8 * * *" script-path=https://raw.githubusercontent.com/csjoy/vrmoo-loon-signin/main/vrmoo-signin.js, tag=魔趣每日签到
+http-response ^https://www\.vrmoo\.vip/ script-path=https://raw.githubusercontent.com/csjoyxy/vrmoo-loon-signin/main/vrmoo-capture.js, tag=魔趣Cookie捕获, requires-body=0
+cron "0 8 * * *" script-path=https://raw.githubusercontent.com/csjoyxy/vrmoo-loon-signin/main/vrmoo-signin.js, tag=魔趣每日签到
 
 [MITM]
 hostname = %APPEND% www.vrmoo.vip
